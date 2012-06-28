@@ -16,6 +16,7 @@
  * Algorithm:
  * 
  * 1. Work building off of functions given
+ * 2. ???
  * 
  */
 
@@ -26,7 +27,7 @@
 
 // This function will take a string and give a number for that string, assuming that all of the string's characters are numeric.
 // This function is pass-by-reference, so you will need an array in main that will take the results of this array.
-// (This function was provided by the teaching assistant)
+// (This function was largely provided by the teaching assistant)
 void GetNumber(char* Input, int Number[]); // Function prototype
 void 
 GetNumber(char* Input, int Number[])
@@ -93,3 +94,4 @@ int main(int argc, char**argv, int * MyFirstNumber[]) {
 }
 
 // newline \n
+
