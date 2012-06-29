@@ -28,9 +28,9 @@
 // This function will take a string and give a number for that string, assuming that all of the string's characters are numeric.
 // This function is pass-by-reference, so you will need an array in main that will take the results of this array.
 // (This function was largely provided by the teaching assistant)
-void GetNumber(char* Input, int Number[]); // Function prototype
+void GetNumber(char Input[], int Number[]); // Function prototype
 void 
-GetNumber(char* Input, int Number[])
+GetNumber(char Input[], int Number[LENGTH])
 {
     int i = 0;
 	int j = 0;
@@ -47,7 +47,8 @@ GetNumber(char* Input, int Number[])
     {
         Number[i] = 0; // This can cause an EXC_BAD_ACCESS error, add a breakpoint (error seems to disappear here when compiled without optimization, i.e. by using the -O0 compiler flag)
     }
-    i = 0;
+	printf("\n i = %i \n", i); // Statement for debugging
+    i = 0; // originally was i = 0 in the teaching assistant's code, I changed to 1 to see if that would fix Input[i]
 	printf("\n Number[i] is %i \n", Number[i]); // Statement for debugging
 	printf("\n i = %i \n", i); // Statement for debugging
 	printf("\n Initializing Number array to 0 done. \n"); // Statement for debugging
@@ -81,13 +82,15 @@ GetNumber(char* Input, int Number[])
 /*
  * Main: The main function
  */
-int main(int argc, char**argv, int * MyFirstNumber[]) {
-	int i = 0;
+int main(int argc, char * argv[], int * MyFirstNumber[LENGTH]) {
+	// int i = LENGTH;
+	int j = 0;
 	printf("\n Enter a number> "); // Prompt
-	scanf("%i", MyFirstNumber[i]); // Get input
+	scanf("%i", MyFirstNumber[j]); // Get input
 	printf("\n argv is %c \n", **argv); // Statement for debugging
+	printf("\n argc is %i \n", argc); // Statement for debugging
 	printf("\n MyFirstNumber is %i \n", **MyFirstNumber); // Statement for debugging
-    GetNumber(argv[1], MyFirstNumber[i]); // Copied from assignment
+    GetNumber(argv[1], MyFirstNumber[j]); // Originally this was copied from assignment
     printf("\n MyFirstNumber is %i \n", **MyFirstNumber); // Statement for debugging
 	printf("\n argc is %i \n", argc); // Statement for debugging
     return 0;

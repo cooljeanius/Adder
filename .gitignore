@@ -4,5 +4,8 @@ build/*
 *.build
 *.pbxuser
 *.perspectivev3
-Debug/
+Debug
+Debug/*
 *.cbTemp
+*.o
+*.dSYM
