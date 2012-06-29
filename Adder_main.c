@@ -1,7 +1,7 @@
 /*
  * Eric Gallager
  * 
- * Problem:
+ * Problem/Assignment:
  *
  * I want you to add two numbers together, representing the numbers as integer arrays.
  * The basic idea is to use arrays to represent the numbers as digits and adding them much like one would add by hand. I want you to be able to type in the command line something like
@@ -30,7 +30,7 @@
 // (This function was largely provided by the teaching assistant)
 void GetNumber(char Input[], int Number[]); // Function prototype
 void 
-GetNumber(char Input[], int Number[LENGTH])
+GetNumber(char Input[], int Number[LENGTH]) // was originally "void GetNumber(char* Input,int Number[])" in TA's code
 {
     int i = 0;
 	int j = 0;
