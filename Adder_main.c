@@ -85,8 +85,8 @@ GetNumber(char Input[], int Number[LENGTH])
 int main(int argc, char * argv[], int * MyFirstNumber[LENGTH]) {
 	// int i = LENGTH;
 	int j = 0;
-	printf("\n Enter a number> "); // Prompt
-	scanf("%i", MyFirstNumber[j]); // Get input
+	printf("\n Enter a number> "); // Prompt (placeholder)
+	scanf("%i", MyFirstNumber[j]); // Get input, placeholder until I figure out how to pass command line arguments to a program from Xcode 3.2.6
 	printf("\n argv is %c \n", **argv); // Statement for debugging
 	printf("\n argc is %i \n", argc); // Statement for debugging
 	printf("\n MyFirstNumber is %i \n", **MyFirstNumber); // Statement for debugging
