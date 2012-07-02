@@ -21,6 +21,8 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
 #include <getopt.h>
 #include <readline/readline.h>
 #define LENGTH 100 // Told to add by comment in copied code below
@@ -82,16 +84,18 @@ GetNumber(char Input[], int Number[LENGTH]) // was originally "void GetNumber(ch
 /*
  * Main: The main function
  */
-int main(int argc, char * argv[], int * MyFirstNumber[LENGTH]) {
+int main(int argc, const char * argv[]) {
+	int *MyFirstNumber[] = {0}; // Moved out of function paratmater list per advice found online
 	// int i = LENGTH;
 	int j = 0;
-	printf("\n Enter a number> "); // Prompt (placeholder)
-	scanf("%i", MyFirstNumber[j]); // Get input, placeholder until I figure out how to pass command line arguments to a program from Xcode 3.2.6
+	// int OutputArray[] = {0}; // Needed to take output of GetNumber function
+	// printf("\n Enter a number> "); // Prompt (placeholder)
+	// scanf("%i", &MyFirstNumber[j]); // Get input, placeholder until I figure out how to pass command line arguments to a program from Xcode 3.2.6
 	printf("\n argv is %c \n", **argv); // Statement for debugging
 	printf("\n argc is %i \n", argc); // Statement for debugging
-	printf("\n MyFirstNumber is %i \n", **MyFirstNumber); // Statement for debugging
-    GetNumber(argv[1], MyFirstNumber[j]); // Originally this was copied from assignment
-    printf("\n MyFirstNumber is %i \n", **MyFirstNumber); // Statement for debugging
+	// printf("\n MyFirstNumber is %i \n", MyFirstNumber[j]); // Statement for debugging
+    GetNumber((char*)argv[1], /*(int*)*/MyFirstNumber[j]); // Originally this was copied from assignment
+    printf("\n MyFirstNumber is %i \n", *MyFirstNumber[j]); // Statement for debugging
 	printf("\n argc is %i \n", argc); // Statement for debugging
     return 0;
 }

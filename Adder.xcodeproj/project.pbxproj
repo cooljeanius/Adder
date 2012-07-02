@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8DD76FAC0486AB0100D96B5E /* Adder_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* Adder_main.c */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* Adder.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* Adder.1 */; };
+		A5B50B37159FAC7E00B7FDF9 /* adder_with_example_code_from_textbook.c in Sources */ = {isa = PBXBuildFile; fileRef = A5B50B2A159FAC0A00B7FDF9 /* adder_with_example_code_from_textbook.c */; };
+		A5B50B39159FAC9000B7FDF9 /* libgcov.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EECC06158ABF7000B48E22 /* libgcov.a */; };
+		A5B50B3E159FB21F00B7FDF9 /* Adder.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* Adder.1 */; };
 		A5EECC07158ABF7000B48E22 /* libgcov.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EECC06158ABF7000B48E22 /* libgcov.a */; };
 /* End PBXBuildFile section */
 
@@ -34,12 +37,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		A5B50B3F159FB24100B7FDF9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				A5B50B3E159FB21F00B7FDF9 /* Adder.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* Adder_main.c */ = {isa = PBXFileReference; comments = "main file in the project"; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Adder_main.c; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* Adder */ = {isa = PBXFileReference; comments = "should have some command-line flags"; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Adder; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B50B2A159FAC0A00B7FDF9 /* adder_with_example_code_from_textbook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adder_with_example_code_from_textbook.c; sourceTree = "<group>"; };
+		A5B50B33159FAC7200B7FDF9 /* Adder_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Adder_2; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EECC06158ABF7000B48E22 /* libgcov.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgcov.a; path = "usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcov.a"; sourceTree = SDKROOT; };
+		A5F5259615A104B900D8CBF3 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
+		A5F5259715A104C000D8CBF3 /* gdb.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gdb.log; sourceTree = "<group>"; };
 		C6A0FF2C0290799A04C91782 /* Adder.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Adder.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +66,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5EECC07158ABF7000B48E22 /* libgcov.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5B50B31159FAC7200B7FDF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B50B39159FAC9000B7FDF9 /* libgcov.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +94,7 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A5B50B2A159FAC0A00B7FDF9 /* adder_with_example_code_from_textbook.c */,
 				08FB7796FE84155DC02AAC07 /* Adder_main.c */,
 			);
 			name = Source;
@@ -78,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD76FB20486AB0100D96B5E /* Adder */,
+				A5B50B33159FAC7200B7FDF9 /* Adder_2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				C6A0FF2C0290799A04C91782 /* Adder.1 */,
+				A5F5259615A104B900D8CBF3 /* readme.md */,
+				A5F5259715A104C000D8CBF3 /* gdb.log */,
 			);
 			name = Documentation;
 			sourceTree = "<group>";
@@ -101,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8DD76FA90486AB0100D96B5E /* Adder */ = {
+		8DD76FA90486AB0100D96B5E /* Adder_1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "Adder" */;
+			buildConfigurationList = 1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "Adder_1" */;
 			buildPhases = (
 				8DD76FAB0486AB0100D96B5E /* Sources */,
 				8DD76FAD0486AB0100D96B5E /* Frameworks */,
@@ -115,10 +144,27 @@
 			comments = "should have command-line flags";
 			dependencies = (
 			);
-			name = Adder;
+			name = Adder_1;
 			productInstallPath = "$(HOME)/bin";
 			productName = Adder;
 			productReference = 8DD76FB20486AB0100D96B5E /* Adder */;
+			productType = "com.apple.product-type.tool";
+		};
+		A5B50B32159FAC7200B7FDF9 /* Adder_2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5B50B3A159FACAE00B7FDF9 /* Build configuration list for PBXNativeTarget "Adder_2" */;
+			buildPhases = (
+				A5B50B30159FAC7200B7FDF9 /* Sources */,
+				A5B50B31159FAC7200B7FDF9 /* Frameworks */,
+				A5B50B3F159FB24100B7FDF9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Adder_2;
+			productName = Adder_2;
+			productReference = A5B50B33159FAC7200B7FDF9 /* Adder_2 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -140,7 +186,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8DD76FA90486AB0100D96B5E /* Adder */,
+				8DD76FA90486AB0100D96B5E /* Adder_1 */,
+				A5B50B32159FAC7200B7FDF9 /* Adder_2 */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +198,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DD76FAC0486AB0100D96B5E /* Adder_main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5B50B30159FAC7200B7FDF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B50B37159FAC7E00B7FDF9 /* adder_with_example_code_from_textbook.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +270,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_STRICT_ALIASING = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_GLOBAL_CONSTRUCTORS = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
@@ -266,10 +322,48 @@
 			};
 			name = Release;
 		};
+		A5B50B35159FAC7300B7FDF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/gcc/i686-apple-darwin10/4.2.1\"",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Adder_2;
+			};
+			name = Debug;
+		};
+		A5B50B36159FAC7300B7FDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/gcc/i686-apple-darwin10/4.2.1\"",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Adder_2;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "Adder" */ = {
+		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "Adder_1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB928608733DD80010E9CD /* Debug */,
@@ -283,6 +377,15 @@
 			buildConfigurations = (
 				1DEB928A08733DD80010E9CD /* Debug */,
 				1DEB928B08733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5B50B3A159FACAE00B7FDF9 /* Build configuration list for PBXNativeTarget "Adder_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5B50B35159FAC7300B7FDF9 /* Debug */,
+				A5B50B36159FAC7300B7FDF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
