@@ -40,6 +40,9 @@
 		<Unit filename="../Adder_main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="../adder_with_example_code_from_textbook.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />

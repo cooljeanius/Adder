@@ -7,5 +7,6 @@ build/*
 Debug
 Debug/*
 *.cbTemp
+*.cbp.cbTemp
 *.o
 *.dSYM
