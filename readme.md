@@ -1,4 +1,4 @@
-## About ## 
+## About
 
 This is another Intro to C assignment. It's supposed to add 2 numbers together from the command line, but I keep getting an EXC\_BAD\_ACCESS error once the program gets to Input[i]. Read the comments in the code for more info.
 

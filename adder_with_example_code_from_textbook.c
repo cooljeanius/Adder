@@ -36,10 +36,10 @@ add_arrays (const double	ar1[],		/* input -													*/
 }
 
 int main (int argc, const char * argv[]) {
-	int x[5] = {0, 0, 0, 0, 0};
-	int y[5] = {0, 0, 0, 0, 0};
-	int x_plus_y[5] = {0, 0, 0, 0, 0};
-	printf("\n");
+	int x[5] = {0, 0, 0, 0, 0}; // Initialize
+	int y[5] = {0, 0, 0, 0, 0}; // Initialize
+	int x_plus_y[5] = {0, 0, 0, 0, 0}; // Initialize
+	printf("\n"); // Pointless
 	printf("\n x[1] = %i \n", x[1]); // Statement for debugging
 	printf("\n y[1] = %i \n", y[1]); // Statement for debugging
 	printf("\n x_plus_y[1] = %i \n", x_plus_y[1]); // Statement for debugging

@@ -50,7 +50,7 @@ GetNumber(char Input[], int Number[LENGTH]) // was originally "void GetNumber(ch
         Number[i] = 0; // This can cause an EXC_BAD_ACCESS error, add a breakpoint (error seems to disappear here when compiled without optimization, i.e. by using the -O0 compiler flag)
     }
 	printf("\n i = %i \n", i); // Statement for debugging
-    i = 0; // originally was i = 0 in the teaching assistant's code, I changed to 1 to see if that would fix Input[i]
+    i = 0; // originally was i = 0 in the teaching assistant's code, I changed to 1 to see if that would fix Input[i], then changed it back after that did nothing
 	printf("\n Number[i] is %i \n", Number[i]); // Statement for debugging
 	printf("\n i = %i \n", i); // Statement for debugging
 	printf("\n Initializing Number array to 0 done. \n"); // Statement for debugging
@@ -95,7 +95,7 @@ int main(int argc, const char * argv[]) {
 	printf("\n argc is %i \n", argc); // Statement for debugging
 	// printf("\n MyFirstNumber is %i \n", MyFirstNumber[j]); // Statement for debugging
     GetNumber((char*)argv[1], /*(int*)*/MyFirstNumber[j]); // Originally this was copied from assignment
-    printf("\n MyFirstNumber is %i \n", *MyFirstNumber[j]); // Statement for debugging
+    printf("\n MyFirstNumber is %i \n", *MyFirstNumber[j]); // Statement for debugging (clang's static analyzer says this is a dereference of a null pointer, but I haven't managed to get my program to run this far in the first place, so it's a moot point)
 	printf("\n argc is %i \n", argc); // Statement for debugging
     return 0;
 }
