@@ -13,19 +13,27 @@
  *
  * ---
  *
- * Algorithm:
+ * Plan:
  *
  * 1. Work building off of functions given
  *	1a. Fix errors
  * 2. ???
+ *
+ * Algorithm:
+ *
+ * 1. Get numbers for input from command line arguments (main() function)
+ * 2. Put first number into integer array (GetNumber() function (provided by TA))
+ * 3. Put second number into integer array (GetNumber() function again)
+ * 4. Add the two arrays together
+ * 5. Display output
  *
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
-#include <getopt.h>
-#include <readline/readline.h>
+#include <getopt.h> // Might have an easier way to parse command-line arguments in it
+#include <readline/readline.h> // Might have an easier way to parse command-line arguments in it
 #include <string.h>
 #define LENGTH 100 // Told to add by comment in copied code below
 
@@ -53,7 +61,7 @@ GetNumber(char Input[], int Number[]) // was originally "void GetNumber(char* In
 	 */
     for(i = 0; i < LENGTH; i++)
     {
-        Number[i] = 0; // This can cause an EXC_BAD_ACCESS error, add a breakpoint (error seems to disappear here when compiled without optimization, i.e. by using the -O0 compiler flag)
+        Number[i] = 0; // This can cause an EXC_BAD_ACCESS error, add a breakpoint (error seemed to disappear here (at first) when compiled without optimization, i.e. by using the -O0 compiler flag)
 		printf("\n Number[%i] is %i \n", i, Number[i]); // Statement for debugging
     }
 	printf("\n i = %i \n", i); // Statement for debugging
@@ -102,7 +110,7 @@ int main(int argc, const char * argv[]) { // Convention for declaring main() fro
 	} else {
 		printf("\n argc is %i \n", argc); // Statement for debugging (should be 3)
 	}
-	printf("\n This printf statement uses the placeholder \"%%s\": %s \n", "string"); // Testing using %s to print strings
+	printf("\n This printf statement uses the placeholder \"%%s\": %s \n", "\"string\""); // Testing using %s to print strings
 	printf("\n First character of argv[0] is %c \n", *argv[0]); // Statement for debugging (Warning: %c can only display one character at a time. I'd use %s but that causes errors.)
 	printf("\n First character of argv[1] is %c \n", *argv[1]); // Statement for debugging (Warning: %c can only display one character at a time. I'd use %s but that causes errors.)
 	printf("\n First character of argv[2] is %c \n", *argv[2]); // Statement for debugging (Warning: %c can only display one character at a time. I'd use %s but that causes errors.)
@@ -118,7 +126,27 @@ int main(int argc, const char * argv[]) { // Convention for declaring main() fro
 	printf("\n MyFirstNumber[j] is %i \n", MyFirstNumber[j]); // Statement for debugging (this might give a compiler warning, but that's better than a runtime error for a simple print function)
     GetNumber((char*)argv[1], /*(int*)*/MyFirstNumber[j]); // Originally this was copied from assignment, I've been messing with it though
     printf("\n MyFirstNumber[j] is %i \n", MyFirstNumber[j]); // Statement for debugging (clang's static analyzer said at one point that this is a dereference of a null pointer, but I haven't managed to get my program to run this far in the first place, so it's a moot point)
-	printf("\n argc is %i \n", argc); // Statement for debugging
+	int *MySecondNumber[LENGTH]; // output array for second number
+	for (j = 0; j < LENGTH; j++) // goes through each element of MySecondNumber[]
+	{
+		MySecondNumber[j] = 0; // sets each array element in MySecondNumber[] to 0
+		printf("\n MySecondNumber[%i] is %i \n", j, MySecondNumber[j]); // Statement for debugging (this might give a compiler warning, but that's better than a runtime error for a simple print function)
+	}
+	j = 0; // Reset j
+	GetNumber((char*)argv[2], /*(int*)*/MySecondNumber[j]); // Repeat what we just did with the first number with our second
+	printf("\n MySecondNumber[j] is %i \n", MySecondNumber[j]); // Statement for debugging
+	int Answer[LENGTH];
+	for (j = 0; j < LENGTH; j++) // Go through entire Answer array
+	{
+		Answer[j] = (*MyFirstNumber[j] + *MySecondNumber[j]); // Add arrays together
+	}
+	while(Answer[j] != '\0') // Go through Answer[] array until getting to the end of the result
+	{
+		printf("%i", Answer[j]); // No spaces so digits will be next to each other
+		j++;
+	}
+	j = 0; // Reset j
+	printf("\n j is %i \n", j); // Statement for debugging
     return 0;
 }
 

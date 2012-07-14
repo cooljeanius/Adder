@@ -11,8 +11,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
-#include <getopt.h>
-#include <readline/readline.h>
+#include <getopt.h> // Might have an easier way to parse command-line arguments in it
+#include <readline/readline.h> // Might have an easier way to parse command-line arguments in it
 #include <string.h>
 
 /*
