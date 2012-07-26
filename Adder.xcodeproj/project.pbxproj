@@ -12,7 +12,6 @@
 		A5B50B37159FAC7E00B7FDF9 /* adder_with_example_code_from_textbook.c in Sources */ = {isa = PBXBuildFile; fileRef = A5B50B2A159FAC0A00B7FDF9 /* adder_with_example_code_from_textbook.c */; };
 		A5B50B39159FAC9000B7FDF9 /* libgcov.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EECC06158ABF7000B48E22 /* libgcov.a */; };
 		A5B50B3E159FB21F00B7FDF9 /* Adder.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* Adder.1 */; };
-		A5EECC07158ABF7000B48E22 /* libgcov.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EECC06158ABF7000B48E22 /* libgcov.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -65,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5EECC07158ABF7000B48E22 /* libgcov.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

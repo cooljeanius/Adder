@@ -13,10 +13,15 @@
 .\" Use .Nm macro to designate other names for the documented program.
 .Sh SYNOPSIS             \" Section Header - required - don't modify
 .Nm 
-somenumber                 
-someothernumber                 \" Arguments
+[
+.Ar somenumber
+]
+[
+.Ar someothernumber                 \" Arguments
+]
 .Sh DESCRIPTION          \" Section Header - required - don't modify
-Adds two numbers passed as arguments from the command line. At least that's what it's supposed to do.
+Adds two numbers passed as arguments from the command line. 
+.\" (At least that's what it's supposed to do)
 .\" .Sh ENVIRONMENT      \" May not be needed
 .\" .Bl -tag -width "ENV_VAR_1" -indent \" ENV_VAR_1 is width of the string ENV_VAR_1
 .\" .It Ev ENV_VAR_1
@@ -26,7 +31,8 @@ Adds two numbers passed as arguments from the command line. At least that's what
 .\" .El                      
 .Sh FILES                \" File used or created by the topic of the man page
 .It Pa /usr/local/share/man/man1/adder.1
-/usr/local/share/man/man1/adder.1 manpage
+/usr/local/share/man/man1/adder.1 
+manpage
 .El                      \" Ends the list
 .\" .Sh DIAGNOSTICS       \" May not be needed
 .\" .Bl -diag
@@ -39,6 +45,6 @@ Adds two numbers passed as arguments from the command line. At least that's what
 .\" List links in ascending order by section, alphabetically within a section.
 .\" Please do not reference files that do not exist without filing a bug report
 .Xr adder 1 
-.Sh BUGS              \" Document known, unremedied bugs 
-Use of Input[i] (among other things) in the code causes an EXC_BAD_ACCESS error. Apparently it has something to do with dereferencing a bad pointer.
+.\" .Sh BUGS              \" Document known, unremedied bugs 
+.\" Use of Input[i] (among other things) in the code causes an EXC_BAD_ACCESS error. Apparently it has something to do with dereferencing a bad pointer.
 .\" .Sh HISTORY           \" Document history if command behaves in a unique manner
