@@ -45,6 +45,9 @@ manpage
 .\" List links in ascending order by section, alphabetically within a section.
 .\" Please do not reference files that do not exist without filing a bug report
 .Xr adder 1 
-.\" .Sh BUGS              \" Document known, unremedied bugs 
-.\" Use of Input[i] (among other things) in the code causes an EXC_BAD_ACCESS error. Apparently it has something to do with dereferencing a bad pointer.
+.Sh BUGS              \" Document known, unremedied bugs 
+The arrays holding each of the numbers being added each only go up to 100 digits. This program has not been tested with adding numbers with more than 100 digits.
+
+The program is also unable to handle decimal points correctly (It does give a result, it's just an incorrect one).
+
 .\" .Sh HISTORY           \" Document history if command behaves in a unique manner

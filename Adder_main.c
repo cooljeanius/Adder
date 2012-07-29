@@ -101,7 +101,7 @@ GetNumber(char Input[], int Number[]) // was originally "void GetNumber(char* In
         i--;
     }
 	// printf("\n Done flipping endianness. \n"); // Statement for debugging
-	return arglen;
+	return arglen; // Pass the number's length back to main function
 }
 
 /*
@@ -111,7 +111,7 @@ int main(int argc, const char * argv[]) { // Convention for declaring main() fro
 	if (argc != 3) { // check to make sure number of arguments is correct
 		printf("\n Incorrect number of arguments specified! This program can only add 2 numbers. \n"); // just in case
 		printf(" Please try again. \n");
-		exit(0); // end program
+		exit(0); // end program, with 0 because even though this is a failure, it isn't an error though.
 	} else {
 		printf("\n You are adding _%i_ numbers. \n", argc-1);
 		// printf("\n argc is %i \n", argc); // Statement for debugging (should be 3)
