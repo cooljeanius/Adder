@@ -6,6 +6,8 @@
  *
  *	This file attempts to solve the same problem as Adder_main.c does, except it uses example code from the textbook (C Program Design for Engineers) instead of the example code supplied by our TA
  *
+ *	!!! Note: Adder_main.c now successfully solves the problem, and this one was never able to, so please use Adder_main.c instead of this file !!!
+ *
  */
 
 #include <stdio.h>
@@ -67,7 +69,7 @@ int main (int argc, const char * argv[]) {
 	}
 	for (i = 0; i < argc; i++) // Goes through each element of argv[]
 	{
-		printf("\n First character of *argv[%i] is %c \n", i, *argv[i]); // Prints each entry in argv[] (Warning: %c can only display one character at a time. I'd use %s but that causes errors.)
+		printf("\n argv[%i] is %s \n", i, argv[i]); // Prints each entry in argv[]
 	}
 	add_arrays(x, y, x_plus_y, 5); // taken from book (don't worry about any warnings about an incompatible pointer type, it still works)
 	printf("\n arsum \n"); // Placeholder
