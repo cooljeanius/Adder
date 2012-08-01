@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		8DD76FAC0486AB0100D96B5E /* Adder_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* Adder_main.c */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* Adder.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* Adder.1 */; };
+		A59250B615C997E7004A6BB6 /* libgetnumber.h in Headers */ = {isa = PBXBuildFile; fileRef = A59250A615C98D6B004A6BB6 /* libgetnumber.h */; };
+		A59250B715C997EA004A6BB6 /* libgetnumber.h in Sources */ = {isa = PBXBuildFile; fileRef = A59250A615C98D6B004A6BB6 /* libgetnumber.h */; };
+		A59250B815C997EC004A6BB6 /* libgetnumber.c in Sources */ = {isa = PBXBuildFile; fileRef = A59250A715C98D6B004A6BB6 /* libgetnumber.c */; };
+		A59250CE15C998CB004A6BB6 /* libgetnumber.h in Headers */ = {isa = PBXBuildFile; fileRef = A59250A615C98D6B004A6BB6 /* libgetnumber.h */; };
+		A59250CF15C998CE004A6BB6 /* libgetnumber.h in Sources */ = {isa = PBXBuildFile; fileRef = A59250A615C98D6B004A6BB6 /* libgetnumber.h */; };
+		A59250D015C998CE004A6BB6 /* libgetnumber.c in Sources */ = {isa = PBXBuildFile; fileRef = A59250A715C98D6B004A6BB6 /* libgetnumber.c */; };
+		A59250EE15C99A07004A6BB6 /* libgetnumber.h in Headers */ = {isa = PBXBuildFile; fileRef = A59250A615C98D6B004A6BB6 /* libgetnumber.h */; };
+		A59250EF15C99A0D004A6BB6 /* Adder_linked.c in Sources */ = {isa = PBXBuildFile; fileRef = A59250E315C9993A004A6BB6 /* Adder_linked.c */; };
+		A59250FE15C99A2C004A6BB6 /* libgetnumber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A59250CB15C9988F004A6BB6 /* libgetnumber.a */; };
 		A5B50B37159FAC7E00B7FDF9 /* adder_with_example_code_from_textbook.c in Sources */ = {isa = PBXBuildFile; fileRef = A5B50B2A159FAC0A00B7FDF9 /* adder_with_example_code_from_textbook.c */; };
 		A5B50B39159FAC9000B7FDF9 /* libgcov.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EECC06158ABF7000B48E22 /* libgcov.a */; };
 		A5B50B3E159FB21F00B7FDF9 /* Adder.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* Adder.1 */; };
@@ -24,6 +33,23 @@
 			);
 		};
 /* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		A59250F015C99A14004A6BB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A59250CA15C9988F004A6BB6;
+			remoteInfo = libgetnumber_static;
+		};
+		A59250F215C99A17004A6BB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A59250B215C997BB004A6BB6;
+			remoteInfo = libgetnumber_dynamic;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8DD76FAF0486AB0100D96B5E /* CopyFiles */ = {
@@ -51,6 +77,12 @@
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* Adder_main.c */ = {isa = PBXFileReference; comments = "main file in the project"; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Adder_main.c; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* Adder */ = {isa = PBXFileReference; comments = "should have some command-line flags"; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Adder; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59250A615C98D6B004A6BB6 /* libgetnumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libgetnumber.h; sourceTree = "<group>"; };
+		A59250A715C98D6B004A6BB6 /* libgetnumber.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libgetnumber.c; sourceTree = "<group>"; };
+		A59250B315C997BC004A6BB6 /* libgetnumber.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libgetnumber.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59250CB15C9988F004A6BB6 /* libgetnumber.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgetnumber.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59250E315C9993A004A6BB6 /* Adder_linked.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Adder_linked.c; sourceTree = "<group>"; };
+		A59250E915C999E5004A6BB6 /* Adder_linked */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Adder_linked; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B50B2A159FAC0A00B7FDF9 /* adder_with_example_code_from_textbook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adder_with_example_code_from_textbook.c; sourceTree = "<group>"; };
 		A5B50B33159FAC7200B7FDF9 /* Adder_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Adder_2; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EECC06158ABF7000B48E22 /* libgcov.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgcov.a; path = "usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcov.a"; sourceTree = SDKROOT; };
@@ -64,6 +96,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59250B115C997BB004A6BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59250C915C9988F004A6BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59250E715C999E5004A6BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59250FE15C99A2C004A6BB6 /* libgetnumber.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +148,8 @@
 			children = (
 				A5B50B2A159FAC0A00B7FDF9 /* adder_with_example_code_from_textbook.c */,
 				08FB7796FE84155DC02AAC07 /* Adder_main.c */,
+				A59250A215C98872004A6BB6 /* libgetnumber */,
+				A59250E315C9993A004A6BB6 /* Adder_linked.c */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -103,8 +159,20 @@
 			children = (
 				8DD76FB20486AB0100D96B5E /* Adder */,
 				A5B50B33159FAC7200B7FDF9 /* Adder_2 */,
+				A59250B315C997BC004A6BB6 /* libgetnumber.dylib */,
+				A59250CB15C9988F004A6BB6 /* libgetnumber.a */,
+				A59250E915C999E5004A6BB6 /* Adder_linked */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A59250A215C98872004A6BB6 /* libgetnumber */ = {
+			isa = PBXGroup;
+			children = (
+				A59250A615C98D6B004A6BB6 /* libgetnumber.h */,
+				A59250A715C98D6B004A6BB6 /* libgetnumber.c */,
+			);
+			name = libgetnumber;
 			sourceTree = "<group>";
 		};
 		A5EECC03158ABF3800B48E22 /* Linked Libraries */ = {
@@ -127,6 +195,33 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A59250AF15C997BB004A6BB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59250B615C997E7004A6BB6 /* libgetnumber.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59250C715C9988F004A6BB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59250CE15C998CB004A6BB6 /* libgetnumber.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59250FC15C99A25004A6BB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59250EE15C99A07004A6BB6 /* libgetnumber.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		8DD76FA90486AB0100D96B5E /* Adder_1 */ = {
 			isa = PBXNativeTarget;
@@ -146,6 +241,59 @@
 			productInstallPath = "$(HOME)/bin";
 			productName = Adder;
 			productReference = 8DD76FB20486AB0100D96B5E /* Adder */;
+			productType = "com.apple.product-type.tool";
+		};
+		A59250B215C997BB004A6BB6 /* libgetnumber_dynamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A59250C315C99819004A6BB6 /* Build configuration list for PBXNativeTarget "libgetnumber_dynamic" */;
+			buildPhases = (
+				A59250AF15C997BB004A6BB6 /* Headers */,
+				A59250B015C997BB004A6BB6 /* Sources */,
+				A59250B115C997BB004A6BB6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libgetnumber_dynamic;
+			productName = "libgetnumber (dynamic)";
+			productReference = A59250B315C997BC004A6BB6 /* libgetnumber.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		A59250CA15C9988F004A6BB6 /* libgetnumber_static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A59250D915C998E0004A6BB6 /* Build configuration list for PBXNativeTarget "libgetnumber_static" */;
+			buildPhases = (
+				A59250C715C9988F004A6BB6 /* Headers */,
+				A59250C815C9988F004A6BB6 /* Sources */,
+				A59250C915C9988F004A6BB6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libgetnumber_static;
+			productName = libgetnumber_static;
+			productReference = A59250CB15C9988F004A6BB6 /* libgetnumber.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A59250E815C999E5004A6BB6 /* Adder_linked */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A59250FD15C99A25004A6BB6 /* Build configuration list for PBXNativeTarget "Adder_linked" */;
+			buildPhases = (
+				A59250FC15C99A25004A6BB6 /* Headers */,
+				A59250E615C999E5004A6BB6 /* Sources */,
+				A59250E715C999E5004A6BB6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A59250F315C99A17004A6BB6 /* PBXTargetDependency */,
+				A59250F115C99A14004A6BB6 /* PBXTargetDependency */,
+			);
+			name = Adder_linked;
+			productName = Adder_linked;
+			productReference = A59250E915C999E5004A6BB6 /* Adder_linked */;
 			productType = "com.apple.product-type.tool";
 		};
 		A5B50B32159FAC7200B7FDF9 /* Adder_2 */ = {
@@ -186,6 +334,9 @@
 			targets = (
 				8DD76FA90486AB0100D96B5E /* Adder_1 */,
 				A5B50B32159FAC7200B7FDF9 /* Adder_2 */,
+				A59250B215C997BB004A6BB6 /* libgetnumber_dynamic */,
+				A59250CA15C9988F004A6BB6 /* libgetnumber_static */,
+				A59250E815C999E5004A6BB6 /* Adder_linked */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +350,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A59250B015C997BB004A6BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59250B715C997EA004A6BB6 /* libgetnumber.h in Sources */,
+				A59250B815C997EC004A6BB6 /* libgetnumber.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59250C815C9988F004A6BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59250CF15C998CE004A6BB6 /* libgetnumber.h in Sources */,
+				A59250D015C998CE004A6BB6 /* libgetnumber.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59250E615C999E5004A6BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59250EF15C99A0D004A6BB6 /* Adder_linked.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5B50B30159FAC7200B7FDF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,6 +385,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A59250F115C99A14004A6BB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A59250CA15C9988F004A6BB6 /* libgetnumber_static */;
+			targetProxy = A59250F015C99A14004A6BB6 /* PBXContainerItemProxy */;
+		};
+		A59250F315C99A17004A6BB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A59250B215C997BB004A6BB6 /* libgetnumber_dynamic */;
+			targetProxy = A59250F215C99A17004A6BB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB928608733DD80010E9CD /* Debug */ = {
@@ -317,6 +507,101 @@
 			};
 			name = Release;
 		};
+		A59250B415C997BC004A6BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = mh_dylib;
+				PREBINDING = NO;
+				PRODUCT_NAME = libgetnumber;
+			};
+			name = Debug;
+		};
+		A59250B515C997BC004A6BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = "libgetnumber (dynamic)";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		A59250CC15C99890004A6BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				MACH_O_TYPE = staticlib;
+				PREBINDING = NO;
+				PRODUCT_NAME = libgetnumber;
+			};
+			name = Debug;
+		};
+		A59250CD15C99890004A6BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = libgetnumber_static;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		A59250EB15C999E5004A6BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = Adder_linked;
+			};
+			name = Debug;
+		};
+		A59250EC15C999E5004A6BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = Adder_linked;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		A5B50B35159FAC7300B7FDF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -372,6 +657,33 @@
 			buildConfigurations = (
 				1DEB928A08733DD80010E9CD /* Debug */,
 				1DEB928B08733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A59250C315C99819004A6BB6 /* Build configuration list for PBXNativeTarget "libgetnumber_dynamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59250B415C997BC004A6BB6 /* Debug */,
+				A59250B515C997BC004A6BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A59250D915C998E0004A6BB6 /* Build configuration list for PBXNativeTarget "libgetnumber_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59250CC15C99890004A6BB6 /* Debug */,
+				A59250CD15C99890004A6BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A59250FD15C99A25004A6BB6 /* Build configuration list for PBXNativeTarget "Adder_linked" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59250EB15C999E5004A6BB6 /* Debug */,
+				A59250EC15C999E5004A6BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
